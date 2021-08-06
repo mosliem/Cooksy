@@ -24,7 +24,11 @@ class LoginViewController: UIViewController {
         passwordTextField.padding()
     }
     
-
+    @IBAction func signupButtonPressed(_ sender: UIButton)
+    {
+        performSegue(withIdentifier:"loginToSignup", sender: self)
+    }
+    
 }
 
 // extention with padding function to set a space at the right and the left of a Textfield
