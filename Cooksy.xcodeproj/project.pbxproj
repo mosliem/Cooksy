@@ -1,0 +1,581 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5593921C26BCA26600221D5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5593921B26BCA26600221D5C /* AppDelegate.swift */; };
+		5593921E26BCA26600221D5C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5593921D26BCA26600221D5C /* SceneDelegate.swift */; };
+		5593922026BCA26600221D5C /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5593921F26BCA26600221D5C /* IntroViewController.swift */; };
+		5593922326BCA26600221D5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5593922126BCA26600221D5C /* Main.storyboard */; };
+		5593922526BCA26800221D5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5593922426BCA26800221D5C /* Assets.xcassets */; };
+		5593923326BCA26800221D5C /* CooksyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5593923226BCA26800221D5C /* CooksyTests.swift */; };
+		5593923E26BCA26800221D5C /* CooksyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5593923D26BCA26800221D5C /* CooksyUITests.swift */; };
+		5593924C26BCBEEE00221D5C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5593924B26BCBEEE00221D5C /* LoginViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5593922F26BCA26800221D5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5593921026BCA26600221D5C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5593921726BCA26600221D5C;
+			remoteInfo = Cooksy;
+		};
+		5593923A26BCA26800221D5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5593921026BCA26600221D5C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5593921726BCA26600221D5C;
+			remoteInfo = Cooksy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5593921826BCA26600221D5C /* Cooksy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cooksy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5593921B26BCA26600221D5C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5593921D26BCA26600221D5C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5593921F26BCA26600221D5C /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		5593922226BCA26600221D5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5593922426BCA26800221D5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5593922926BCA26800221D5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5593922E26BCA26800221D5C /* CooksyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CooksyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5593923226BCA26800221D5C /* CooksyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CooksyTests.swift; sourceTree = "<group>"; };
+		5593923426BCA26800221D5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5593923926BCA26800221D5C /* CooksyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CooksyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5593923D26BCA26800221D5C /* CooksyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CooksyUITests.swift; sourceTree = "<group>"; };
+		5593923F26BCA26800221D5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5593924B26BCBEEE00221D5C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5593921526BCA26600221D5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5593922B26BCA26800221D5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5593923626BCA26800221D5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5593920F26BCA26600221D5C = {
+			isa = PBXGroup;
+			children = (
+				5593921A26BCA26600221D5C /* Cooksy */,
+				5593923126BCA26800221D5C /* CooksyTests */,
+				5593923C26BCA26800221D5C /* CooksyUITests */,
+				5593921926BCA26600221D5C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5593921926BCA26600221D5C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5593921826BCA26600221D5C /* Cooksy.app */,
+				5593922E26BCA26800221D5C /* CooksyTests.xctest */,
+				5593923926BCA26800221D5C /* CooksyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5593921A26BCA26600221D5C /* Cooksy */ = {
+			isa = PBXGroup;
+			children = (
+				5593921B26BCA26600221D5C /* AppDelegate.swift */,
+				5593921D26BCA26600221D5C /* SceneDelegate.swift */,
+				5593921F26BCA26600221D5C /* IntroViewController.swift */,
+				5593924B26BCBEEE00221D5C /* LoginViewController.swift */,
+				5593922126BCA26600221D5C /* Main.storyboard */,
+				5593922426BCA26800221D5C /* Assets.xcassets */,
+				5593922926BCA26800221D5C /* Info.plist */,
+			);
+			path = Cooksy;
+			sourceTree = "<group>";
+		};
+		5593923126BCA26800221D5C /* CooksyTests */ = {
+			isa = PBXGroup;
+			children = (
+				5593923226BCA26800221D5C /* CooksyTests.swift */,
+				5593923426BCA26800221D5C /* Info.plist */,
+			);
+			path = CooksyTests;
+			sourceTree = "<group>";
+		};
+		5593923C26BCA26800221D5C /* CooksyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5593923D26BCA26800221D5C /* CooksyUITests.swift */,
+				5593923F26BCA26800221D5C /* Info.plist */,
+			);
+			path = CooksyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5593921726BCA26600221D5C /* Cooksy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5593924226BCA26800221D5C /* Build configuration list for PBXNativeTarget "Cooksy" */;
+			buildPhases = (
+				5593921426BCA26600221D5C /* Sources */,
+				5593921526BCA26600221D5C /* Frameworks */,
+				5593921626BCA26600221D5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cooksy;
+			productName = Cooksy;
+			productReference = 5593921826BCA26600221D5C /* Cooksy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5593922D26BCA26800221D5C /* CooksyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5593924526BCA26800221D5C /* Build configuration list for PBXNativeTarget "CooksyTests" */;
+			buildPhases = (
+				5593922A26BCA26800221D5C /* Sources */,
+				5593922B26BCA26800221D5C /* Frameworks */,
+				5593922C26BCA26800221D5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5593923026BCA26800221D5C /* PBXTargetDependency */,
+			);
+			name = CooksyTests;
+			productName = CooksyTests;
+			productReference = 5593922E26BCA26800221D5C /* CooksyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5593923826BCA26800221D5C /* CooksyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5593924826BCA26800221D5C /* Build configuration list for PBXNativeTarget "CooksyUITests" */;
+			buildPhases = (
+				5593923526BCA26800221D5C /* Sources */,
+				5593923626BCA26800221D5C /* Frameworks */,
+				5593923726BCA26800221D5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5593923B26BCA26800221D5C /* PBXTargetDependency */,
+			);
+			name = CooksyUITests;
+			productName = CooksyUITests;
+			productReference = 5593923926BCA26800221D5C /* CooksyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5593921026BCA26600221D5C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = mohamedSliem;
+				TargetAttributes = {
+					5593921726BCA26600221D5C = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					5593922D26BCA26800221D5C = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 5593921726BCA26600221D5C;
+					};
+					5593923826BCA26800221D5C = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 5593921726BCA26600221D5C;
+					};
+				};
+			};
+			buildConfigurationList = 5593921326BCA26600221D5C /* Build configuration list for PBXProject "Cooksy" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5593920F26BCA26600221D5C;
+			productRefGroup = 5593921926BCA26600221D5C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5593921726BCA26600221D5C /* Cooksy */,
+				5593922D26BCA26800221D5C /* CooksyTests */,
+				5593923826BCA26800221D5C /* CooksyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5593921626BCA26600221D5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5593922526BCA26800221D5C /* Assets.xcassets in Resources */,
+				5593922326BCA26600221D5C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5593922C26BCA26800221D5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5593923726BCA26800221D5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5593921426BCA26600221D5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5593924C26BCBEEE00221D5C /* LoginViewController.swift in Sources */,
+				5593922026BCA26600221D5C /* IntroViewController.swift in Sources */,
+				5593921C26BCA26600221D5C /* AppDelegate.swift in Sources */,
+				5593921E26BCA26600221D5C /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5593922A26BCA26800221D5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5593923326BCA26800221D5C /* CooksyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5593923526BCA26800221D5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5593923E26BCA26800221D5C /* CooksyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5593923026BCA26800221D5C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5593921726BCA26600221D5C /* Cooksy */;
+			targetProxy = 5593922F26BCA26800221D5C /* PBXContainerItemProxy */;
+		};
+		5593923B26BCA26800221D5C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5593921726BCA26600221D5C /* Cooksy */;
+			targetProxy = 5593923A26BCA26800221D5C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5593922126BCA26600221D5C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5593922226BCA26600221D5C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5593924026BCA26800221D5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5593924126BCA26800221D5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5593924326BCA26800221D5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Cooksy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.sliem.Cooksy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5593924426BCA26800221D5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Cooksy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.sliem.Cooksy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5593924626BCA26800221D5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CooksyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.sliem.CooksyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cooksy.app/Cooksy";
+			};
+			name = Debug;
+		};
+		5593924726BCA26800221D5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CooksyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.sliem.CooksyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cooksy.app/Cooksy";
+			};
+			name = Release;
+		};
+		5593924926BCA26800221D5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CooksyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.sliem.CooksyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Cooksy;
+			};
+			name = Debug;
+		};
+		5593924A26BCA26800221D5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CooksyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.sliem.CooksyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Cooksy;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5593921326BCA26600221D5C /* Build configuration list for PBXProject "Cooksy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5593924026BCA26800221D5C /* Debug */,
+				5593924126BCA26800221D5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5593924226BCA26800221D5C /* Build configuration list for PBXNativeTarget "Cooksy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5593924326BCA26800221D5C /* Debug */,
+				5593924426BCA26800221D5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5593924526BCA26800221D5C /* Build configuration list for PBXNativeTarget "CooksyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5593924626BCA26800221D5C /* Debug */,
+				5593924726BCA26800221D5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5593924826BCA26800221D5C /* Build configuration list for PBXNativeTarget "CooksyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5593924926BCA26800221D5C /* Debug */,
+				5593924A26BCA26800221D5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5593921026BCA26600221D5C /* Project object */;
+}
