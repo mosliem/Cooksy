@@ -13,22 +13,36 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var emailTextField:UITextField!
     @IBOutlet weak var passwordTextField:UITextField!
     @IBOutlet weak var signinButton: UIButton!
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+         navigationController?.navigationBar.isHidden = true
+    }
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        navigationController?.navigationBar.isHidden = true
         emailTextField.layer.cornerRadius = emailTextField.frame.height/2
         passwordTextField.layer.cornerRadius = passwordTextField.frame.height/2
         signinButton.layer.cornerRadius = signinButton.frame.height/2
         emailTextField.padding()
         passwordTextField.padding()
+        
+        // textField Delegate
+        emailTextField.delegate = self
+        passwordTextField.delegate = self
     }
+       
     
-    @IBAction func signupButtonPressed(_ sender: UIButton)
+    @IBAction func signinButtonPressed(_ sender: UIButton)
     {
-        performSegue(withIdentifier:"loginToSignup", sender: self)
+        performSegue(withIdentifier: "loginToMain", sender: self)
     }
     
+    
+    @IBAction func SignupButtonPressed(_ sender: UIButton)
+    {
+        performSegue(withIdentifier: "loginToSignup", sender: self)
+    }
+
 }
 
 // extention with padding function to set a space at the right and the left of a Textfield
@@ -41,5 +55,14 @@ extension UITextField
     self.rightView = paddingView
     self.leftViewMode = UITextField.ViewMode.always
     self.rightViewMode = UITextField.ViewMode.always
+    }
+}
+
+extension LoginViewController : UITextFieldDelegate
+{
+    public func textFieldShouldReturn(_ textField: UITextField) -> Bool
+    {
+        textField.endEditing(true)
+        return true
     }
 }

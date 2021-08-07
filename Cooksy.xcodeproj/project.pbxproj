@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		555DAE7A26BF0B600057E683 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555DAE7926BF0B600057E683 /* MainViewController.swift */; };
+		555DAE7C26BF25580057E683 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 555DAE7B26BF25580057E683 /* GoogleService-Info.plist */; };
 		5593921C26BCA26600221D5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5593921B26BCA26600221D5C /* AppDelegate.swift */; };
 		5593921E26BCA26600221D5C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5593921D26BCA26600221D5C /* SceneDelegate.swift */; };
 		5593922026BCA26600221D5C /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5593921F26BCA26600221D5C /* IntroViewController.swift */; };
@@ -16,6 +18,7 @@
 		5593923E26BCA26800221D5C /* CooksyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5593923D26BCA26800221D5C /* CooksyUITests.swift */; };
 		5593924C26BCBEEE00221D5C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5593924B26BCBEEE00221D5C /* LoginViewController.swift */; };
 		55CAD8D726BDA32300EE469B /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CAD8D626BDA32300EE469B /* SignupViewController.swift */; };
+		C1D2DA52DFF954CF21DAEC93 /* libPods-Cooksy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BE3C4E761C5960C460BC44E /* libPods-Cooksy.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		098F18228E23D8BE09B9D6FE /* Pods-Cooksy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cooksy.release.xcconfig"; path = "Target Support Files/Pods-Cooksy/Pods-Cooksy.release.xcconfig"; sourceTree = "<group>"; };
+		4BE3C4E761C5960C460BC44E /* libPods-Cooksy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Cooksy.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		555DAE7926BF0B600057E683 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		555DAE7B26BF25580057E683 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5593921826BCA26600221D5C /* Cooksy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cooksy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5593921B26BCA26600221D5C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5593921D26BCA26600221D5C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +58,7 @@
 		5593923F26BCA26800221D5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5593924B26BCBEEE00221D5C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		55CAD8D626BDA32300EE469B /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		AA2E5B540FBDA7C77019A0B5 /* Pods-Cooksy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cooksy.debug.xcconfig"; path = "Target Support Files/Pods-Cooksy/Pods-Cooksy.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1D2DA52DFF954CF21DAEC93 /* libPods-Cooksy.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +87,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B634020E67E1EEE428C06E1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AA2E5B540FBDA7C77019A0B5 /* Pods-Cooksy.debug.xcconfig */,
+				098F18228E23D8BE09B9D6FE /* Pods-Cooksy.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		5593920F26BCA26600221D5C = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +104,8 @@
 				5593923126BCA26800221D5C /* CooksyTests */,
 				5593923C26BCA26800221D5C /* CooksyUITests */,
 				5593921926BCA26600221D5C /* Products */,
+				4B634020E67E1EEE428C06E1 /* Pods */,
+				FE7DC58E684E76DFE5754DD5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,6 +129,7 @@
 				55CAD8D826BDA36300EE469B /* Controller */,
 				5593922426BCA26800221D5C /* Assets.xcassets */,
 				5593922926BCA26800221D5C /* Info.plist */,
+				555DAE7B26BF25580057E683 /* GoogleService-Info.plist */,
 			);
 			path = Cooksy;
 			sourceTree = "<group>";
@@ -136,6 +158,7 @@
 				5593921F26BCA26600221D5C /* IntroViewController.swift */,
 				5593924B26BCBEEE00221D5C /* LoginViewController.swift */,
 				55CAD8D626BDA32300EE469B /* SignupViewController.swift */,
+				555DAE7926BF0B600057E683 /* MainViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -155,6 +178,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		FE7DC58E684E76DFE5754DD5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4BE3C4E761C5960C460BC44E /* libPods-Cooksy.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -162,9 +193,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5593924226BCA26800221D5C /* Build configuration list for PBXNativeTarget "Cooksy" */;
 			buildPhases = (
+				9ED9B15F2BB69BD05C83F1A2 /* [CP] Check Pods Manifest.lock */,
 				5593921426BCA26600221D5C /* Sources */,
 				5593921526BCA26600221D5C /* Frameworks */,
 				5593921626BCA26600221D5C /* Resources */,
+				13852DF9F95D46DC5126CB19 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -260,6 +293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5593922526BCA26800221D5C /* Assets.xcassets in Resources */,
+				555DAE7C26BF25580057E683 /* GoogleService-Info.plist in Resources */,
 				5593922326BCA26600221D5C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +314,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		13852DF9F95D46DC5126CB19 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cooksy/Pods-Cooksy-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cooksy/Pods-Cooksy-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Cooksy/Pods-Cooksy-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9ED9B15F2BB69BD05C83F1A2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Cooksy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5593921426BCA26600221D5C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -288,6 +364,7 @@
 				5593924C26BCBEEE00221D5C /* LoginViewController.swift in Sources */,
 				5593922026BCA26600221D5C /* IntroViewController.swift in Sources */,
 				55CAD8D726BDA32300EE469B /* SignupViewController.swift in Sources */,
+				555DAE7A26BF0B600057E683 /* MainViewController.swift in Sources */,
 				5593921C26BCA26600221D5C /* AppDelegate.swift in Sources */,
 				5593921E26BCA26600221D5C /* SceneDelegate.swift in Sources */,
 			);
@@ -452,6 +529,7 @@
 		};
 		5593924326BCA26800221D5C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA2E5B540FBDA7C77019A0B5 /* Pods-Cooksy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -469,6 +547,7 @@
 		};
 		5593924426BCA26800221D5C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 098F18228E23D8BE09B9D6FE /* Pods-Cooksy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
