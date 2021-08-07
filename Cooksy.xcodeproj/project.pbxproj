@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		068C6A66D11D3C700052D0F5 /* Pods_Cooksy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 297CC0FC5648C35BE899349D /* Pods_Cooksy.framework */; };
 		555DAE7A26BF0B600057E683 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555DAE7926BF0B600057E683 /* MainViewController.swift */; };
 		555DAE7C26BF25580057E683 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 555DAE7B26BF25580057E683 /* GoogleService-Info.plist */; };
 		5593921C26BCA26600221D5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5593921B26BCA26600221D5C /* AppDelegate.swift */; };
@@ -18,7 +19,6 @@
 		5593923E26BCA26800221D5C /* CooksyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5593923D26BCA26800221D5C /* CooksyUITests.swift */; };
 		5593924C26BCBEEE00221D5C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5593924B26BCBEEE00221D5C /* LoginViewController.swift */; };
 		55CAD8D726BDA32300EE469B /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CAD8D626BDA32300EE469B /* SignupViewController.swift */; };
-		C1D2DA52DFF954CF21DAEC93 /* libPods-Cooksy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BE3C4E761C5960C460BC44E /* libPods-Cooksy.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +40,7 @@
 
 /* Begin PBXFileReference section */
 		098F18228E23D8BE09B9D6FE /* Pods-Cooksy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cooksy.release.xcconfig"; path = "Target Support Files/Pods-Cooksy/Pods-Cooksy.release.xcconfig"; sourceTree = "<group>"; };
-		4BE3C4E761C5960C460BC44E /* libPods-Cooksy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Cooksy.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		297CC0FC5648C35BE899349D /* Pods_Cooksy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cooksy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		555DAE7926BF0B600057E683 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		555DAE7B26BF25580057E683 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5593921826BCA26600221D5C /* Cooksy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cooksy.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,7 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1D2DA52DFF954CF21DAEC93 /* libPods-Cooksy.a in Frameworks */,
+				068C6A66D11D3C700052D0F5 /* Pods_Cooksy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,7 +181,7 @@
 		FE7DC58E684E76DFE5754DD5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4BE3C4E761C5960C460BC44E /* libPods-Cooksy.a */,
+				297CC0FC5648C35BE899349D /* Pods_Cooksy.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -197,7 +197,7 @@
 				5593921426BCA26600221D5C /* Sources */,
 				5593921526BCA26600221D5C /* Frameworks */,
 				5593921626BCA26600221D5C /* Resources */,
-				13852DF9F95D46DC5126CB19 /* [CP] Copy Pods Resources */,
+				BA6758C2FB007EFB4CDA28F5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -315,23 +315,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		13852DF9F95D46DC5126CB19 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Cooksy/Pods-Cooksy-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Cooksy/Pods-Cooksy-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Cooksy/Pods-Cooksy-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		9ED9B15F2BB69BD05C83F1A2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -352,6 +335,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA6758C2FB007EFB4CDA28F5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cooksy/Pods-Cooksy-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cooksy/Pods-Cooksy-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Cooksy/Pods-Cooksy-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

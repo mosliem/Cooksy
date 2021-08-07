@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import Firebase
 class LoginViewController: UIViewController {
 
     @IBOutlet weak var emailTextField:UITextField!
@@ -34,16 +34,37 @@ class LoginViewController: UIViewController {
     
     @IBAction func signinButtonPressed(_ sender: UIButton)
     {
-        performSegue(withIdentifier: "loginToMain", sender: self)
+        if let email = emailTextField.text , let password = passwordTextField.text , !email.isEmpty , !password.isEmpty
+        {
+            Auth.auth().signIn(withEmail:email, password: password) { (auth, error) in
+                if let e = error
+                {
+                    let alert = UIAlertController(title: "Sorry", message:e.localizedDescription, preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                    self.present(alert,animated: true)
+                }
+                else
+                {
+                    self.performSegue(withIdentifier: "loginToMain", sender: self)
+                }
+                
+            }
+        
+         }
+        else
+        {
+            let alert = UIAlertController(title: "Sorry", message:"You Should enter these fields", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            self.present(alert,animated: true)
+        }
+    
     }
-    
-    
     @IBAction func SignupButtonPressed(_ sender: UIButton)
     {
         performSegue(withIdentifier: "loginToSignup", sender: self)
     }
-
 }
+
 
 // extention with padding function to set a space at the right and the left of a Textfield
 extension UITextField

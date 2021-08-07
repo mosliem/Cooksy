@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "BE67F497EB4A8EDF4049EA4E310E43D1"
-               BuildableName = "libPods-Cooksy.a"
+               BuildableName = "Pods_Cooksy.framework"
                BlueprintName = "Pods-Cooksy"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
