@@ -14,6 +14,7 @@ class SignupViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var SignupButton: UIButton!
+    let db = Firestore.firestore()
     
     override func viewWillAppear(_ animated: Bool) {
            super.viewWillAppear(animated)
@@ -68,6 +69,8 @@ class SignupViewController: UIViewController {
                         else
                         {
                             self.performSegue(withIdentifier: "signupToMain", sender: self)
+                            self.setUserInfo()
+                            
                         }
                     })
                   
@@ -85,7 +88,18 @@ class SignupViewController: UIViewController {
     {
         navigationController?.popViewController(animated: true)
     }
-    
+    func setUserInfo()
+    {
+        let CurrUsername = Auth.auth().currentUser?.displayName!
+        self.db.collection(CurrUsername!).document("user info").setData([
+                                            
+                                            "username" : CurrUsername! ,
+                                            "dateOfBirth" : "Not Specified" ,
+                                            "gender" : "Not Specified" ,
+                                            "phoneNO." : "NotSpecified",
+                                                                        ])
+
+    }
 }
 
 
