@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 class SignupViewController: UIViewController {
-
+    
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -17,14 +17,14 @@ class SignupViewController: UIViewController {
     let db = Firestore.firestore()
     
     override func viewWillAppear(_ animated: Bool) {
-           super.viewWillAppear(animated)
-            navigationController?.navigationBar.isHidden = true
-       }
+        super.viewWillAppear(animated)
+        navigationController?.navigationBar.isHidden = true
+    }
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
-      
+        
         usernameTextField.padding()
         passwordTextField.padding()
         emailTextField.padding()
@@ -38,7 +38,7 @@ class SignupViewController: UIViewController {
         emailTextField.delegate = self
         passwordTextField.delegate = self
         
- 
+        
     }
     
     
@@ -59,10 +59,10 @@ class SignupViewController: UIViewController {
                     let usernameSet = Auth.auth().currentUser?.createProfileChangeRequest()
                     usernameSet?.displayName = username
                     usernameSet?.commitChanges(completion: { (error) in
-                      
+                        
                         if let e = error
                         {
-                          let alert = UIAlertController(title: "Sorry", message:e.localizedDescription, preferredStyle: .alert)
+                            let alert = UIAlertController(title: "Sorry", message:e.localizedDescription, preferredStyle: .alert)
                             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
                             self.present(alert,animated: true)
                         }
@@ -73,15 +73,15 @@ class SignupViewController: UIViewController {
                             
                         }
                     })
-                  
+                    
                 }
             }
         }
         else
         {
-         let alert = UIAlertController(title: "Sorry", message:"You Should enter these fields", preferredStyle: .alert)
-         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-         self.present(alert,animated: true)
+            let alert = UIAlertController(title: "Sorry", message:"You Should enter these fields", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            self.present(alert,animated: true)
         }
     }
     @IBAction func signinButtonPressed(_ sender: UIButton)
@@ -92,13 +92,14 @@ class SignupViewController: UIViewController {
     {
         let CurrUsername = Auth.auth().currentUser?.displayName!
         self.db.collection(CurrUsername!).document("user info").setData([
-                                            
-                                            "username" : CurrUsername! ,
-                                            "dateOfBirth" : "Not Specified" ,
-                                            "gender" : "Not Specified" ,
-                                            "phoneNO." : "NotSpecified",
-                                                                        ])
-
+            
+            "username" : CurrUsername! ,
+            "dateOfBirth" : "Not Specified" ,
+            "gender" : "Not Specified" ,
+            "phoneNO" : "Not Specified",
+            "profilePicUrl" : "NotSpecified"
+        ])
+        
     }
 }
 

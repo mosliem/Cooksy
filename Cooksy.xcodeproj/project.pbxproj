@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,6 +19,8 @@
 		5593923E26BCA26800221D5C /* CooksyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5593923D26BCA26800221D5C /* CooksyUITests.swift */; };
 		5593924C26BCBEEE00221D5C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5593924B26BCBEEE00221D5C /* LoginViewController.swift */; };
 		55CAD8D726BDA32300EE469B /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CAD8D626BDA32300EE469B /* SignupViewController.swift */; };
+		55D05A4A26C2F18F0098AFE8 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D05A4926C2F18F0098AFE8 /* ProfileViewController.swift */; };
+		55D05A4C26C321030098AFE8 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D05A4B26C321030098AFE8 /* EditProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,8 @@
 		5593923F26BCA26800221D5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5593924B26BCBEEE00221D5C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		55CAD8D626BDA32300EE469B /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		55D05A4926C2F18F0098AFE8 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		55D05A4B26C321030098AFE8 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		AA2E5B540FBDA7C77019A0B5 /* Pods-Cooksy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cooksy.debug.xcconfig"; path = "Target Support Files/Pods-Cooksy/Pods-Cooksy.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,7 +97,6 @@
 				AA2E5B540FBDA7C77019A0B5 /* Pods-Cooksy.debug.xcconfig */,
 				098F18228E23D8BE09B9D6FE /* Pods-Cooksy.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -127,7 +130,6 @@
 				55CAD8DB26BDA39B00EE469B /* Model */,
 				55CAD8D926BDA37900EE469B /* View */,
 				55CAD8D826BDA36300EE469B /* Controller */,
-				5593922426BCA26800221D5C /* Assets.xcassets */,
 				5593922926BCA26800221D5C /* Info.plist */,
 				555DAE7B26BF25580057E683 /* GoogleService-Info.plist */,
 			);
@@ -159,6 +161,8 @@
 				5593924B26BCBEEE00221D5C /* LoginViewController.swift */,
 				55CAD8D626BDA32300EE469B /* SignupViewController.swift */,
 				555DAE7926BF0B600057E683 /* MainViewController.swift */,
+				55D05A4926C2F18F0098AFE8 /* ProfileViewController.swift */,
+				55D05A4B26C321030098AFE8 /* EditProfileViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -166,6 +170,7 @@
 		55CAD8D926BDA37900EE469B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5593922426BCA26800221D5C /* Assets.xcassets */,
 				5593922126BCA26600221D5C /* Main.storyboard */,
 			);
 			path = View;
@@ -251,7 +256,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 1130;
+				LastUpgradeCheck = 1240;
 				ORGANIZATIONNAME = mohamedSliem;
 				TargetAttributes = {
 					5593921726BCA26600221D5C = {
@@ -361,10 +366,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55D05A4C26C321030098AFE8 /* EditProfileViewController.swift in Sources */,
 				5593924C26BCBEEE00221D5C /* LoginViewController.swift in Sources */,
 				5593922026BCA26600221D5C /* IntroViewController.swift in Sources */,
 				55CAD8D726BDA32300EE469B /* SignupViewController.swift in Sources */,
 				555DAE7A26BF0B600057E683 /* MainViewController.swift in Sources */,
+				55D05A4A26C2F18F0098AFE8 /* ProfileViewController.swift in Sources */,
 				5593921C26BCA26600221D5C /* AppDelegate.swift in Sources */,
 				5593921E26BCA26600221D5C /* SceneDelegate.swift in Sources */,
 			);
@@ -439,6 +446,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -499,6 +507,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
