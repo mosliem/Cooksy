@@ -21,6 +21,10 @@
 		55CAD8D726BDA32300EE469B /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CAD8D626BDA32300EE469B /* SignupViewController.swift */; };
 		55D05A4A26C2F18F0098AFE8 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D05A4926C2F18F0098AFE8 /* ProfileViewController.swift */; };
 		55D05A4C26C321030098AFE8 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D05A4B26C321030098AFE8 /* EditProfileViewController.swift */; };
+		55D8409826C85C88008EF264 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D8409726C85C88008EF264 /* SearchViewController.swift */; };
+		55D8409B26C870DE008EF264 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D8409926C870DE008EF264 /* TableViewCell.swift */; };
+		55D8409C26C870DE008EF264 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55D8409A26C870DE008EF264 /* TableViewCell.xib */; };
+		55D8409E26C8836B008EF264 /* searchItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D8409D26C8836B008EF264 /* searchItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +66,10 @@
 		55CAD8D626BDA32300EE469B /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		55D05A4926C2F18F0098AFE8 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		55D05A4B26C321030098AFE8 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		55D8409726C85C88008EF264 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		55D8409926C870DE008EF264 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		55D8409A26C870DE008EF264 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		55D8409D26C8836B008EF264 /* searchItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchItem.swift; sourceTree = "<group>"; };
 		AA2E5B540FBDA7C77019A0B5 /* Pods-Cooksy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cooksy.debug.xcconfig"; path = "Target Support Files/Pods-Cooksy/Pods-Cooksy.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -163,6 +171,7 @@
 				555DAE7926BF0B600057E683 /* MainViewController.swift */,
 				55D05A4926C2F18F0098AFE8 /* ProfileViewController.swift */,
 				55D05A4B26C321030098AFE8 /* EditProfileViewController.swift */,
+				55D8409726C85C88008EF264 /* SearchViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -172,6 +181,8 @@
 			children = (
 				5593922426BCA26800221D5C /* Assets.xcassets */,
 				5593922126BCA26600221D5C /* Main.storyboard */,
+				55D8409926C870DE008EF264 /* TableViewCell.swift */,
+				55D8409A26C870DE008EF264 /* TableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -179,6 +190,7 @@
 		55CAD8DB26BDA39B00EE469B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				55D8409D26C8836B008EF264 /* searchItem.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -298,6 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5593922526BCA26800221D5C /* Assets.xcassets in Resources */,
+				55D8409C26C870DE008EF264 /* TableViewCell.xib in Resources */,
 				555DAE7C26BF25580057E683 /* GoogleService-Info.plist in Resources */,
 				5593922326BCA26600221D5C /* Main.storyboard in Resources */,
 			);
@@ -369,8 +382,11 @@
 				55D05A4C26C321030098AFE8 /* EditProfileViewController.swift in Sources */,
 				5593924C26BCBEEE00221D5C /* LoginViewController.swift in Sources */,
 				5593922026BCA26600221D5C /* IntroViewController.swift in Sources */,
+				55D8409826C85C88008EF264 /* SearchViewController.swift in Sources */,
 				55CAD8D726BDA32300EE469B /* SignupViewController.swift in Sources */,
+				55D8409B26C870DE008EF264 /* TableViewCell.swift in Sources */,
 				555DAE7A26BF0B600057E683 /* MainViewController.swift in Sources */,
+				55D8409E26C8836B008EF264 /* searchItem.swift in Sources */,
 				55D05A4A26C2F18F0098AFE8 /* ProfileViewController.swift in Sources */,
 				5593921C26BCA26600221D5C /* AppDelegate.swift in Sources */,
 				5593921E26BCA26600221D5C /* SceneDelegate.swift in Sources */,
