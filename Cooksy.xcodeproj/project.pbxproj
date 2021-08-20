@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		068C6A66D11D3C700052D0F5 /* Pods_Cooksy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 297CC0FC5648C35BE899349D /* Pods_Cooksy.framework */; };
+		551F387F26C99AA000E0D2FD /* SearchResultManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F387E26C99AA000E0D2FD /* SearchResultManger.swift */; };
+		551F388126C99AE100E0D2FD /* searchResultData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F388026C99AE100E0D2FD /* searchResultData.swift */; };
 		555DAE7A26BF0B600057E683 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555DAE7926BF0B600057E683 /* MainViewController.swift */; };
 		555DAE7C26BF25580057E683 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 555DAE7B26BF25580057E683 /* GoogleService-Info.plist */; };
 		5593921C26BCA26600221D5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5593921B26BCA26600221D5C /* AppDelegate.swift */; };
@@ -47,6 +49,8 @@
 /* Begin PBXFileReference section */
 		098F18228E23D8BE09B9D6FE /* Pods-Cooksy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cooksy.release.xcconfig"; path = "Target Support Files/Pods-Cooksy/Pods-Cooksy.release.xcconfig"; sourceTree = "<group>"; };
 		297CC0FC5648C35BE899349D /* Pods_Cooksy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cooksy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		551F387E26C99AA000E0D2FD /* SearchResultManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultManger.swift; sourceTree = "<group>"; };
+		551F388026C99AE100E0D2FD /* searchResultData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchResultData.swift; sourceTree = "<group>"; };
 		555DAE7926BF0B600057E683 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		555DAE7B26BF25580057E683 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5593921826BCA26600221D5C /* Cooksy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cooksy.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -191,6 +195,8 @@
 			isa = PBXGroup;
 			children = (
 				55D8409D26C8836B008EF264 /* searchItem.swift */,
+				551F387E26C99AA000E0D2FD /* SearchResultManger.swift */,
+				551F388026C99AE100E0D2FD /* searchResultData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -381,10 +387,12 @@
 			files = (
 				55D05A4C26C321030098AFE8 /* EditProfileViewController.swift in Sources */,
 				5593924C26BCBEEE00221D5C /* LoginViewController.swift in Sources */,
+				551F388126C99AE100E0D2FD /* searchResultData.swift in Sources */,
 				5593922026BCA26600221D5C /* IntroViewController.swift in Sources */,
 				55D8409826C85C88008EF264 /* SearchViewController.swift in Sources */,
 				55CAD8D726BDA32300EE469B /* SignupViewController.swift in Sources */,
 				55D8409B26C870DE008EF264 /* TableViewCell.swift in Sources */,
+				551F387F26C99AA000E0D2FD /* SearchResultManger.swift in Sources */,
 				555DAE7A26BF0B600057E683 /* MainViewController.swift in Sources */,
 				55D8409E26C8836B008EF264 /* searchItem.swift in Sources */,
 				55D05A4A26C2F18F0098AFE8 /* ProfileViewController.swift in Sources */,

@@ -151,9 +151,9 @@ class EditProfileViewController: UIViewController {
                 DispatchQueue.main.async
                     {
                         self.progressView.setProgress(progress, animated: true)
-                }
+                    }
                 
-            }
+               }
         }
         else  //if there is no choseimage to set it
         {

@@ -23,7 +23,7 @@
                             <constraint firstAttribute="width" constant="170" id="VCa-Y3-k0b"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7yR-Tv-wZd">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="7yR-Tv-wZd">
                         <rect key="frame" x="35" y="260" width="140" height="40"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="140" id="nDt-D9-eq7"/>
@@ -40,7 +40,7 @@
                             <constraint firstAttribute="height" constant="250" id="XaM-IU-xDq"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9CR-k9-kdu">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="9CR-k9-kdu">
                         <rect key="frame" x="386" y="260" width="150" height="40"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="150" id="1BH-Lg-VXP"/>
@@ -51,16 +51,16 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mgr-b0-ffu" userLabel="rightButton">
-                        <rect key="frame" x="386" y="10" width="165" height="250"/>
+                        <rect key="frame" x="386" y="10" width="170" height="250"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="165" id="oQz-Sj-Ppb"/>
+                            <constraint firstAttribute="width" constant="170" id="oQz-Sj-Ppb"/>
                         </constraints>
                         <connections>
                             <action selector="RightIsPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="3RL-ey-ybW"/>
                         </connections>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="9G7-FU-WY5" userLabel="leftButton">
-                        <rect key="frame" x="30" y="13" width="170" height="244"/>
+                        <rect key="frame" x="30" y="13" width="170" height="250"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <connections>
                             <action selector="leftIsPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="5jy-dW-kkp"/>

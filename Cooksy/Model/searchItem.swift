@@ -12,4 +12,5 @@ struct SearchItem
 {
     let recipeImage : UIImage
     let title : String
+   // let id : String
 }
