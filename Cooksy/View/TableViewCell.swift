@@ -17,6 +17,9 @@ class TableViewCell: UITableViewCell {
     @IBOutlet weak var rightButton: UIButton!
     @IBOutlet weak var recipeImageViewLeft: UIImageView!
     @IBOutlet weak var recipeTitleLeft: UILabel!
+    var leftId : Int?
+    var rightId : Int?
+
     override func awakeFromNib()
     {
         super.awakeFromNib()
@@ -47,7 +50,7 @@ class TableViewCell: UITableViewCell {
         Timer.scheduledTimer(withTimeInterval: 0.2, repeats: false) { (timer) in
             self.rightButton.backgroundColor = UIColor.clear
         }
-        print("rightIsPressed")
+        print(rightId!)
     }
     @IBAction func leftIsPressed(_ sender: UIButton)
     {
@@ -55,7 +58,7 @@ class TableViewCell: UITableViewCell {
         Timer.scheduledTimer(withTimeInterval: 0.2, repeats: false) { (timer) in
             self.leftButton.backgroundColor = UIColor.clear
         }
-        print("left is pressed")
+        print(leftId!)
     }
     
 }

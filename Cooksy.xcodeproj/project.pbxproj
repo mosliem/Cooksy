@@ -27,6 +27,9 @@
 		55D8409B26C870DE008EF264 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D8409926C870DE008EF264 /* TableViewCell.swift */; };
 		55D8409C26C870DE008EF264 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55D8409A26C870DE008EF264 /* TableViewCell.xib */; };
 		55D8409E26C8836B008EF264 /* searchItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D8409D26C8836B008EF264 /* searchItem.swift */; };
+		55E63A1A26D1D6E600D89132 /* GetIdResultManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E63A1926D1D6E600D89132 /* GetIdResultManger.swift */; };
+		55E63A1C26D1D74200D89132 /* IdResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E63A1B26D1D74200D89132 /* IdResult.swift */; };
+		55E63A1E26D1FA3300D89132 /* idResultData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E63A1D26D1FA3300D89132 /* idResultData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +77,9 @@
 		55D8409926C870DE008EF264 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		55D8409A26C870DE008EF264 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		55D8409D26C8836B008EF264 /* searchItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchItem.swift; sourceTree = "<group>"; };
+		55E63A1926D1D6E600D89132 /* GetIdResultManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetIdResultManger.swift; sourceTree = "<group>"; };
+		55E63A1B26D1D74200D89132 /* IdResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdResult.swift; sourceTree = "<group>"; };
+		55E63A1D26D1FA3300D89132 /* idResultData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = idResultData.swift; sourceTree = "<group>"; };
 		AA2E5B540FBDA7C77019A0B5 /* Pods-Cooksy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cooksy.debug.xcconfig"; path = "Target Support Files/Pods-Cooksy/Pods-Cooksy.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -197,6 +203,9 @@
 				55D8409D26C8836B008EF264 /* searchItem.swift */,
 				551F387E26C99AA000E0D2FD /* SearchResultManger.swift */,
 				551F388026C99AE100E0D2FD /* searchResultData.swift */,
+				55E63A1926D1D6E600D89132 /* GetIdResultManger.swift */,
+				55E63A1B26D1D74200D89132 /* IdResult.swift */,
+				55E63A1D26D1FA3300D89132 /* idResultData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -387,6 +396,8 @@
 			files = (
 				55D05A4C26C321030098AFE8 /* EditProfileViewController.swift in Sources */,
 				5593924C26BCBEEE00221D5C /* LoginViewController.swift in Sources */,
+				55E63A1C26D1D74200D89132 /* IdResult.swift in Sources */,
+				55E63A1E26D1FA3300D89132 /* idResultData.swift in Sources */,
 				551F388126C99AE100E0D2FD /* searchResultData.swift in Sources */,
 				5593922026BCA26600221D5C /* IntroViewController.swift in Sources */,
 				55D8409826C85C88008EF264 /* SearchViewController.swift in Sources */,
@@ -395,6 +406,7 @@
 				551F387F26C99AA000E0D2FD /* SearchResultManger.swift in Sources */,
 				555DAE7A26BF0B600057E683 /* MainViewController.swift in Sources */,
 				55D8409E26C8836B008EF264 /* searchItem.swift in Sources */,
+				55E63A1A26D1D6E600D89132 /* GetIdResultManger.swift in Sources */,
 				55D05A4A26C2F18F0098AFE8 /* ProfileViewController.swift in Sources */,
 				5593921C26BCA26600221D5C /* AppDelegate.swift in Sources */,
 				5593921E26BCA26600221D5C /* SceneDelegate.swift in Sources */,

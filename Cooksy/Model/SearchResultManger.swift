@@ -4,7 +4,6 @@
 //
 //  Created by mohamedSliem on 8/15/21.
 //  Copyright © 2021 mohamedSliem. All rights reserved.
-//
 
 import UIKit
 
@@ -21,7 +20,7 @@ class SearchResultManger
     
     func fetchResult(query : String)
     {
-        let urlString = "\(apiUrl)&query=\(query)&number=80"
+        let urlString = "\(apiUrl)&query=\(query)&number=100"
         performRequest(url: urlString)
     }
     func performRequest(url : String)
@@ -79,7 +78,7 @@ class SearchResultManger
             for index in 0 ..< number
             {
                 downloadImage(url: decodedData.results[index].image, Imagecompletion: ({ downloadedImage in
-                    self.results.append(SearchItem(recipeImage: downloadedImage!, title: decodedData.results[index].title))
+                    self.results.append(SearchItem(recipeImage: downloadedImage!, title: decodedData.results[index].title,id: decodedData.results[index].id))
                     if index+1 == number
                     {
                         ParseCompletion(true)
