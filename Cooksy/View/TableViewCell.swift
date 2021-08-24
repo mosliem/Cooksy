@@ -8,6 +8,15 @@
 
 import UIKit
 
+protocol FetchIdDelegate
+{
+    func getId(id: Int)
+}
+
+protocol isPressedDelegate
+{
+    func gotoToRecipe()
+}
 class TableViewCell: UITableViewCell {
     @IBOutlet weak var recipeImageViewRight: UIImageView!
     
@@ -19,7 +28,8 @@ class TableViewCell: UITableViewCell {
     @IBOutlet weak var recipeTitleLeft: UILabel!
     var leftId : Int?
     var rightId : Int?
-
+    var IdDelegate : FetchIdDelegate?
+    var pressedDelegate : isPressedDelegate?
     override func awakeFromNib()
     {
         super.awakeFromNib()
@@ -50,7 +60,8 @@ class TableViewCell: UITableViewCell {
         Timer.scheduledTimer(withTimeInterval: 0.2, repeats: false) { (timer) in
             self.rightButton.backgroundColor = UIColor.clear
         }
-        print(rightId!)
+        IdDelegate?.getId(id: rightId!)
+        pressedDelegate?.gotoToRecipe()
     }
     @IBAction func leftIsPressed(_ sender: UIButton)
     {
@@ -58,7 +69,8 @@ class TableViewCell: UITableViewCell {
         Timer.scheduledTimer(withTimeInterval: 0.2, repeats: false) { (timer) in
             self.leftButton.backgroundColor = UIColor.clear
         }
-        print(leftId!)
+        IdDelegate?.getId(id: leftId!)
+        pressedDelegate?.gotoToRecipe()
     }
     
 }

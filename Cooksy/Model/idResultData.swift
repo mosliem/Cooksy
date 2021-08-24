@@ -7,7 +7,7 @@
 //
 
 import Foundation
-struct idResult : Codable
+struct idResultData : Decodable
 {
     let title : String
     let readyInMinutes : Int
@@ -18,19 +18,15 @@ struct idResult : Codable
     
 }
 
-struct ingredients : Codable
+struct ingredients : Decodable
 {
-    let name : String
-    let amount : Double
-    let unit : String
+    let original : String
 }
-
-struct instruction : Codable
+struct instruction : Decodable
 {
     let steps : [step]
 }
-struct step : Codable
+struct step : Decodable
 {
-    let number : Int
     let step : String
 }

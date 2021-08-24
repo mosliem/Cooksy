@@ -12,6 +12,7 @@
 		551F388126C99AE100E0D2FD /* searchResultData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F388026C99AE100E0D2FD /* searchResultData.swift */; };
 		555DAE7A26BF0B600057E683 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555DAE7926BF0B600057E683 /* MainViewController.swift */; };
 		555DAE7C26BF25580057E683 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 555DAE7B26BF25580057E683 /* GoogleService-Info.plist */; };
+		5583B9A426D35E2800243C2A /* RecipePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5583B9A326D35E2800243C2A /* RecipePageViewController.swift */; };
 		5593921C26BCA26600221D5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5593921B26BCA26600221D5C /* AppDelegate.swift */; };
 		5593921E26BCA26600221D5C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5593921D26BCA26600221D5C /* SceneDelegate.swift */; };
 		5593922026BCA26600221D5C /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5593921F26BCA26600221D5C /* IntroViewController.swift */; };
@@ -26,9 +27,9 @@
 		55D8409826C85C88008EF264 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D8409726C85C88008EF264 /* SearchViewController.swift */; };
 		55D8409B26C870DE008EF264 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D8409926C870DE008EF264 /* TableViewCell.swift */; };
 		55D8409C26C870DE008EF264 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55D8409A26C870DE008EF264 /* TableViewCell.xib */; };
-		55D8409E26C8836B008EF264 /* searchItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D8409D26C8836B008EF264 /* searchItem.swift */; };
+		55D8409E26C8836B008EF264 /* searchItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D8409D26C8836B008EF264 /* searchItemModel.swift */; };
 		55E63A1A26D1D6E600D89132 /* GetIdResultManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E63A1926D1D6E600D89132 /* GetIdResultManger.swift */; };
-		55E63A1C26D1D74200D89132 /* IdResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E63A1B26D1D74200D89132 /* IdResult.swift */; };
+		55E63A1C26D1D74200D89132 /* IdResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E63A1B26D1D74200D89132 /* IdResultModel.swift */; };
 		55E63A1E26D1FA3300D89132 /* idResultData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E63A1D26D1FA3300D89132 /* idResultData.swift */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,7 @@
 		551F388026C99AE100E0D2FD /* searchResultData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchResultData.swift; sourceTree = "<group>"; };
 		555DAE7926BF0B600057E683 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		555DAE7B26BF25580057E683 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5583B9A326D35E2800243C2A /* RecipePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipePageViewController.swift; sourceTree = "<group>"; };
 		5593921826BCA26600221D5C /* Cooksy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cooksy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5593921B26BCA26600221D5C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5593921D26BCA26600221D5C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,9 +78,9 @@
 		55D8409726C85C88008EF264 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		55D8409926C870DE008EF264 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		55D8409A26C870DE008EF264 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
-		55D8409D26C8836B008EF264 /* searchItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchItem.swift; sourceTree = "<group>"; };
+		55D8409D26C8836B008EF264 /* searchItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchItemModel.swift; sourceTree = "<group>"; };
 		55E63A1926D1D6E600D89132 /* GetIdResultManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetIdResultManger.swift; sourceTree = "<group>"; };
-		55E63A1B26D1D74200D89132 /* IdResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdResult.swift; sourceTree = "<group>"; };
+		55E63A1B26D1D74200D89132 /* IdResultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdResultModel.swift; sourceTree = "<group>"; };
 		55E63A1D26D1FA3300D89132 /* idResultData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = idResultData.swift; sourceTree = "<group>"; };
 		AA2E5B540FBDA7C77019A0B5 /* Pods-Cooksy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cooksy.debug.xcconfig"; path = "Target Support Files/Pods-Cooksy/Pods-Cooksy.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -182,6 +184,7 @@
 				55D05A4926C2F18F0098AFE8 /* ProfileViewController.swift */,
 				55D05A4B26C321030098AFE8 /* EditProfileViewController.swift */,
 				55D8409726C85C88008EF264 /* SearchViewController.swift */,
+				5583B9A326D35E2800243C2A /* RecipePageViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -200,11 +203,11 @@
 		55CAD8DB26BDA39B00EE469B /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				55D8409D26C8836B008EF264 /* searchItem.swift */,
+				55D8409D26C8836B008EF264 /* searchItemModel.swift */,
 				551F387E26C99AA000E0D2FD /* SearchResultManger.swift */,
 				551F388026C99AE100E0D2FD /* searchResultData.swift */,
 				55E63A1926D1D6E600D89132 /* GetIdResultManger.swift */,
-				55E63A1B26D1D74200D89132 /* IdResult.swift */,
+				55E63A1B26D1D74200D89132 /* IdResultModel.swift */,
 				55E63A1D26D1FA3300D89132 /* idResultData.swift */,
 			);
 			path = Model;
@@ -396,7 +399,7 @@
 			files = (
 				55D05A4C26C321030098AFE8 /* EditProfileViewController.swift in Sources */,
 				5593924C26BCBEEE00221D5C /* LoginViewController.swift in Sources */,
-				55E63A1C26D1D74200D89132 /* IdResult.swift in Sources */,
+				55E63A1C26D1D74200D89132 /* IdResultModel.swift in Sources */,
 				55E63A1E26D1FA3300D89132 /* idResultData.swift in Sources */,
 				551F388126C99AE100E0D2FD /* searchResultData.swift in Sources */,
 				5593922026BCA26600221D5C /* IntroViewController.swift in Sources */,
@@ -405,7 +408,8 @@
 				55D8409B26C870DE008EF264 /* TableViewCell.swift in Sources */,
 				551F387F26C99AA000E0D2FD /* SearchResultManger.swift in Sources */,
 				555DAE7A26BF0B600057E683 /* MainViewController.swift in Sources */,
-				55D8409E26C8836B008EF264 /* searchItem.swift in Sources */,
+				5583B9A426D35E2800243C2A /* RecipePageViewController.swift in Sources */,
+				55D8409E26C8836B008EF264 /* searchItemModel.swift in Sources */,
 				55E63A1A26D1D6E600D89132 /* GetIdResultManger.swift in Sources */,
 				55D05A4A26C2F18F0098AFE8 /* ProfileViewController.swift in Sources */,
 				5593921C26BCA26600221D5C /* AppDelegate.swift in Sources */,
@@ -577,7 +581,9 @@
 			baseConfigurationReference = AA2E5B540FBDA7C77019A0B5 /* Pods-Cooksy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TCD4XHJF85;
 				INFOPLIST_FILE = Cooksy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -585,6 +591,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = co.sliem.Cooksy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -595,7 +602,9 @@
 			baseConfigurationReference = 098F18228E23D8BE09B9D6FE /* Pods-Cooksy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TCD4XHJF85;
 				INFOPLIST_FILE = Cooksy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -603,6 +612,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = co.sliem.Cooksy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

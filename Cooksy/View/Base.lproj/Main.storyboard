@@ -113,7 +113,7 @@
                                                         <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <size key="shadowOffset" width="1" height="1"/>
                                                     </label>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7z4-Gc-L0w">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="we@test.com" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7z4-Gc-L0w">
                                                         <rect key="frame" x="0.0" y="28" width="282" height="47"/>
                                                         <color key="backgroundColor" white="0.96684931506849314" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
@@ -144,7 +144,7 @@
                                                         <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <size key="shadowOffset" width="1" height="1"/>
                                                     </label>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Or2-PK-qlO">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="31191299" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Or2-PK-qlO">
                                                         <rect key="frame" x="0.0" y="28" width="282" height="47"/>
                                                         <color key="backgroundColor" white="0.96684931510000005" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
@@ -562,7 +562,6 @@
         <!--Search View Controller-->
         <scene sceneID="Yfk-GL-c07">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Yuq-Hi-p0Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="EXo-tk-iNa" userLabel="Search View Controller" customClass="SearchViewController" customModule="Cooksy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yHh-Rg-7eO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -596,8 +595,10 @@
                     <connections>
                         <outlet property="SearchTableView" destination="bDj-nm-0GS" id="fcL-S6-VkY"/>
                         <outlet property="recipeSearchBar" destination="Pq3-jB-RMS" id="q4k-2a-1yj"/>
+                        <segue destination="BrV-hP-JV3" kind="show" identifier="searchPageToItem" id="Teb-tz-9sK"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yuq-Hi-p0Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3598.5507246376815" y="1175.8928571428571"/>
         </scene>
@@ -608,6 +609,15 @@
                     <view key="view" contentMode="scaleToFill" id="c9x-iF-wtp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wrp-Jo-Vqr">
+                                <rect key="frame" x="186" y="135" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="5kD-Md-Njp"/>
                     </view>
@@ -615,7 +625,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="211-wc-rhi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4428" y="1176"/>
+            <point key="canvasLocation" x="4427.536231884058" y="1175.8928571428571"/>
         </scene>
         <!--My Profile-->
         <scene sceneID="jVV-wK-1HY">
@@ -725,6 +735,52 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="df0-En-aqp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5302.898550724638" y="1175.8928571428571"/>
+        </scene>
+        <!--Recipe Page View Controller-->
+        <scene sceneID="YeH-cD-UoA">
+            <objects>
+                <viewController id="BrV-hP-JV3" customClass="RecipePageViewController" customModule="Cooksy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7ee-aO-gsD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qkm-gj-3BM">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="barTintColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem largeTitleDisplayMode="never" id="4Nh-YB-adR">
+                                        <barButtonItem key="leftBarButtonItem" image="chevron.left" catalog="system" id="mhY-OP-Kdh">
+                                            <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Item" image="suit.heart" catalog="system" id="VVK-Ny-ij2">
+                                            <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T8L-rp-AMs">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="OhI-ey-go3"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="vCo-zz-t3x"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="HBE-fL-6Tj"/>
+                    </view>
+                    <connections>
+                        <outlet property="RecipescrollView" destination="T8L-rp-AMs" id="DiP-Tn-ujh"/>
+                        <outlet property="navBar" destination="qkm-gj-3BM" id="6ee-HX-8iY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GEe-hP-Nsn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3595.652173913044" y="2060.4910714285716"/>
         </scene>
         <!--Edit Profile View Controller-->
         <scene sceneID="fgm-G3-bKV">
@@ -845,6 +901,7 @@
     <resources>
         <image name="MeAvatar" width="36" height="36"/>
         <image name="camera.fill" catalog="system" width="64" height="48"/>
+        <image name="chevron.left" catalog="system" width="48" height="64"/>
         <image name="house" catalog="system" width="64" height="54"/>
         <image name="intro" width="400" height="600"/>
         <image name="magnifyingglass" catalog="system" width="64" height="56"/>

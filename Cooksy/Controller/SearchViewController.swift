@@ -10,13 +10,14 @@ import UIKit
 
 class SearchViewController: UIViewController,getResultDelegate
 {
-    
     @IBOutlet weak var recipeSearchBar: UISearchBar!
     @IBOutlet weak var SearchTableView: UITableView!
     
     var items1 : [SearchItem] = []
     var items2 : [SearchItem] = []
+    var chosenRecipeId : Int?
     let searchManger = SearchResultManger()
+    let idResultManger = GetIdResultManger()
     let activityview = UIView(frame:CGRect(x: 150 , y: 390, width: 100, height: 100))
     let NotFoundLabel = UILabel(frame: CGRect(x: 150, y: 390, width: 100, height: 100))
 
@@ -82,6 +83,7 @@ class SearchViewController: UIViewController,getResultDelegate
             self.SearchTableView.reloadData()
         }
     }
+        
 }
 
 extension SearchViewController: UITableViewDelegate,UITableViewDataSource
@@ -95,7 +97,8 @@ extension SearchViewController: UITableViewDelegate,UITableViewDataSource
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let cell = SearchTableView.dequeueReusableCell(withIdentifier: "ReusableCell", for: indexPath) as! TableViewCell
-        
+        cell.pressedDelegate = self
+        cell.IdDelegate = self
         cell.recipeImageViewRight.image = items1[indexPath.row].recipeImage
         cell.recipeTitleRight.text = items1[indexPath.row].title
         cell.rightId = items1[indexPath.row].id
@@ -103,6 +106,7 @@ extension SearchViewController: UITableViewDelegate,UITableViewDataSource
         cell.recipeImageViewLeft.image = items2[indexPath.row].recipeImage
         cell.recipeTitleLeft.text = items2[indexPath.row].title
         cell.leftId = items2[indexPath.row].id
+        
         return cell
     }
     
@@ -145,5 +149,29 @@ extension SearchViewController : UISearchBarDelegate
     {
         searchManger.fetchResult(query: searchBar.text!)
         print("fetched")
+    }
+}
+
+extension SearchViewController : isPressedDelegate
+{
+    func gotoToRecipe() {
+        performSegue(withIdentifier: "searchPageToItem", sender: self)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+        if segue.identifier == "searchPageToItem"
+        {
+            let vc = segue.destination as! RecipePageViewController
+            vc.id = chosenRecipeId
+        }
+    }
+    
+}
+
+extension SearchViewController : FetchIdDelegate
+{
+    func getId(id: Int)
+    {
+        chosenRecipeId = id
     }
 }
