@@ -1,0 +1,12 @@
+xcassets:
+  inputs: Cooksy/Resources/assests/Assets.xcassets
+  outputs:
+    templateName: swift5
+    output: Cooksy/Resources/assests/AssetsManger.swift
+
+
+fonts:
+  inputs: Cooksy/Resources/fonts
+  outputs:
+    templateName: swift5
+    output: Cooksy/Resources/fonts/FontsManger.swift

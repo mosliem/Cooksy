@@ -21,7 +21,7 @@ class GetIdResultManger
     var getDataDelegate : getRecipeDataDelegate?
     func fetchIdData(id : Int)
     {
-    let urlString = "https://api.spoonacular.com/recipes/\(id)/information?apiKey=68237ae87b234b339090a185f1057920&&includeNutrition=false"
+    let urlString = "https://api.spoonacular.com/recipes/\(id)/information?apiKey=74e6cf12b1fe4739950f3cb8765a9871&&includeNutrition=false"
     performRequest(urlString: urlString)
     }
     
