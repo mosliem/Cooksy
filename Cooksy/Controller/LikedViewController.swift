@@ -17,13 +17,20 @@ class LikedViewController: UIViewController {
     let username = Auth.auth().currentUser?.displayName
     let db = Firestore.firestore()
     let storage = Storage.storage().reference()
-
+    var chosenId : Int?
+    
+    override func viewWillAppear(_ animated: Bool)
+    {
+        super.viewWillAppear(animated)
+        navigationController?.navigationBar.isHidden = false
+    }
     override func viewDidLoad()
     {
         super.viewDidLoad()
         tableView.register(UINib(nibName: "lovedRecipeCell", bundle: nil), forCellReuseIdentifier:"reusableCell")
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.backgroundColor = .systemGroupedBackground
         loadingScreen()
     }
     
@@ -36,24 +43,23 @@ class LikedViewController: UIViewController {
          loadingIcon.startAnimating()
          loadingView.addSubview(loadingIcon)
          self.view.addSubview(loadingView)
-         updataUI { (updated) in
+         updateData { (updated) in
             if updated
             {
                 DispatchQueue.main.async {
                     print(updated)
                     self.loadingView.removeFromSuperview()
-                    
+                    self.tableView.reloadData()
                 }
             }
         }
      }
     
-    func updataUI(updateComplettion : @escaping(Bool)->Void)
+    func updateData(updateComplettion : @escaping(Bool)->Void)
     {
         print("updateCalled")
         db.collection(username!).addSnapshotListener { (querySnapShot, error) in
             
-            var index : Int = 0
             if let e = error
             {
                 print(e.localizedDescription)
@@ -61,30 +67,28 @@ class LikedViewController: UIViewController {
             
             if let snapShotdoc = querySnapShot?.documents
             {
+                self.lovedRecipes = []
+                var index = 1
                 for doc in snapShotdoc
                 {
                     let data = doc.data()
                     if let imageURL = data["imageURL"] as? String
                     {
                         self.downloadRecImage(url: imageURL) { (image) in
+                            
                             if let name = data["name"] as? String , let time = data["time"] as? Int , let serving = data["serving"] as? Int, let id = data["id"] as? String , let loved = data["loved"] as? Bool
                             {
-                                print(id)
                                 let newItem = lovedRecipe(loved: loved, id: id, image: image, name: name, serving:serving, time: time)
                                 self.lovedRecipes.append(newItem)
                             }
-                            DispatchQueue.main.async {
-                                self.tableView.reloadData()
+                            index += 1
+                            if index == snapShotdoc.count
+                            {
+                                updateComplettion(true)
                             }
                         }
                     }
                     
-                }
-                if index == snapShotdoc.count-1
-                {
-                    print(index)
-                    print(snapShotdoc.count)
-                    updateComplettion(true)
                 }
             }
         }
@@ -118,16 +122,33 @@ extension LikedViewController : UITableViewDelegate , UITableViewDataSource
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let item = lovedRecipes[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "reusableCell") as! lovedRecipeCell
+        cell.fetchIdDelegate = self
         cell.recipeImage.image = item.image
         cell.titleLabel.text = item.name
-        cell.timeLabel.text = String(item.time)
-        cell.servingLabel.text = String(item.serving)
-        print(cell)
-        print(lovedRecipes)
+        cell.timeLabel.text = String("\(item.time) minutes")
+        cell.servingLabel.text = String("\(item.serving) people")
+        cell.id = Int(item.id)
         return cell
     }
-    
-}
 
+}
+ 
+extension LikedViewController : getCellId
+{
+    func fetchId(id: Int)
+    {
+     print(id)
+      chosenId = id
+      performSegue(withIdentifier: "favoritesToDetails", sender: self)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "favoritesToDetails"
+        {
+            let vc = segue.destination as! RecipePageViewController
+            vc.id = chosenId
+        }
+    }
+
+}
 
 

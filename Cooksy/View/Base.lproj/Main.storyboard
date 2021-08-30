@@ -604,7 +604,7 @@
             </objects>
             <point key="canvasLocation" x="3598.5507246376815" y="1175.8928571428571"/>
         </scene>
-        <!--Loved Recipes -->
+        <!--Favorites-->
         <scene sceneID="zKv-Rp-Uvf">
             <objects>
                 <viewController id="a0Q-LO-gxr" customClass="LikedViewController" customModule="Cooksy" customModuleProvider="target" sceneMemberID="viewController">
@@ -612,7 +612,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0tL-qS-b3b">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0tL-qS-b3b">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
@@ -626,9 +626,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="5kD-Md-Njp"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Loved Recipes " id="lAx-2h-dda"/>
+                    <navigationItem key="navigationItem" title="Favorites" id="lAx-2h-dda"/>
                     <connections>
                         <outlet property="tableView" destination="0tL-qS-b3b" id="5AQ-WU-Sc0"/>
+                        <segue destination="BrV-hP-JV3" kind="show" identifier="favoritesToDetails" id="uAa-x5-Tn4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="211-wc-rhi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -749,7 +750,7 @@
             <objects>
                 <viewController id="BrV-hP-JV3" customClass="RecipePageViewController" customModule="Cooksy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7ee-aO-gsD">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T8L-rp-AMs">
@@ -763,13 +764,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="HBE-fL-6Tj"/>
                     </view>
+                    <navigationItem key="navigationItem" id="A2N-LH-gZa"/>
                     <connections>
                         <outlet property="RecipescrollView" destination="T8L-rp-AMs" id="DiP-Tn-ujh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GEe-hP-Nsn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3595.652173913044" y="2060.4910714285716"/>
+            <point key="canvasLocation" x="3599" y="2087"/>
         </scene>
         <!--Edit Profile View Controller-->
         <scene sceneID="fgm-G3-bKV">
@@ -897,6 +899,7 @@
         <image name="suit.heart" catalog="system" width="64" height="54"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="uAa-x5-Tn4"/>
         <segue reference="TBO-Yo-Y5e"/>
     </inferredMetricsTieBreakers>
 </document>

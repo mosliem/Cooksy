@@ -24,17 +24,62 @@ class RecipePageViewController: UIViewController , getRecipeDataDelegate
     
     
     @IBOutlet weak var RecipescrollView: UIScrollView!
-
+    override func viewWillAppear(_ animated: Bool)
+    {
+        super.viewWillAppear(animated)
+        navigationController?.navigationBar.isHidden = true
+    }
     override func viewDidLoad()
     {
         super.viewDidLoad()
         loadingScreen()
         recipeDataManger.getDataDelegate = self
         fetchData()
+        
     }
   
+    
+    // get the state of lovedButton if it true or fasle
+    // and the call update UI
+    func checkIfFav()
+    {
+        
+        db.collection(username!).document("\(id!)").addSnapshotListener { (docSnapShot, _) in
+            if let doc = docSnapShot?.data()
+            {
+                if let lovedState = doc["loved"] as? Bool
+                {
+                    self.loved = lovedState
+                }
+            }
+            DispatchQueue.main.async
+                {
+                
+                    self.loadingView.removeFromSuperview()
+                    self.updateUI()
+               }
+        }
+            
+        
+        
+    }
+    func fetchData()
+    {
+        recipeDataManger.fetchIdData(id: id!)
+    }
+    
+    func didGetData(_ getIdResultManger: GetIdResultManger, recipeData: IdResultModel)
+    {
+        print("done")
+        Data = recipeData
+        checkIfFav()
+       
+    }
+    
+
     func updateUI()
     {
+        print("updated with detial")
         RecipescrollView.contentSize = CGSize(width: view.frame.size.width, height: 1900)
         RecipescrollView.backgroundColor = .systemGroupedBackground
             
@@ -143,9 +188,15 @@ class RecipePageViewController: UIViewController , getRecipeDataDelegate
         //love button
         lovedButton.frame = CGRect(x: view.center.x+(RecipescrollView.frame.size.width/2)-70 , y: -25, width: 70, height: 70)
         lovedButton.backgroundColor = .clear
-        let image = Asset.loveIcon.image
-        lovedButton.setImage(image, for: .normal)
         lovedButton.imageView?.tintColor = .darkGray
+        if loved
+        {
+         lovedButton.setImage(Asset.loveIconFill.image, for: .normal)
+        }
+        else
+        {
+            lovedButton.setImage(Asset.loveIcon.image, for: .normal)
+        }
         lovedButton.imageView?.contentMode = .scaleAspectFit
         lovedButton.addTarget(self, action: #selector(lovedButtonPressed), for: .touchUpInside)
         RecipescrollView.addSubview(lovedButton)
@@ -186,7 +237,7 @@ class RecipePageViewController: UIViewController , getRecipeDataDelegate
         instrctionsTextView.frame.size = CGSize(width: max(fixedWidthInstruction, newSizeInstruction.width), height:newSizeInstruction.height)
         let newSizeScroll = outerImageView.frame.height+titleLabel.frame.height+ingredientsLabel.frame.height+textView.frame.height+label.frame.height+instrctionsTextView.frame.height
         
-        RecipescrollView.contentSize.height = newSizeScroll+110
+        RecipescrollView.contentSize.height = newSizeScroll+180
     }
     
     @objc func lovedButtonPressed(sender : UIButton!)
@@ -201,6 +252,18 @@ class RecipePageViewController: UIViewController , getRecipeDataDelegate
         else
         {
             lovedButton.setImage(Asset.loveIcon.image, for: .normal)
+            db.collection(username!).document("\(id!)").addSnapshotListener { (Snapshot, _) in
+                if let doc = Snapshot, doc.exists
+                {
+                 
+                }
+            }
+            db.collection(username!).document("\(id!)").delete { (error) in
+                if let e = error
+                {
+                    print(e.localizedDescription)
+                }
+            }
             loved = false
         }
     
@@ -220,22 +283,6 @@ class RecipePageViewController: UIViewController , getRecipeDataDelegate
         loadingView.addSubview(loadingIcon)
         self.view.addSubview(loadingView)
     }
-    
-    func fetchData()
-    {
-        recipeDataManger.fetchIdData(id: id!)
-    }
-    
-    func didGetData(_ getIdResultManger: GetIdResultManger, recipeData: IdResultModel) {
-        print("done")
-        Data = recipeData
-        DispatchQueue.main.async
-            {
-                self.loadingView.removeFromSuperview()
-                self.updateUI()
-           }
-    }
-    
     
     
     func loveRecipe(loved: Bool, name: String, Id: Int, image: UIImage, time: Int, serving: Int)
