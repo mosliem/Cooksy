@@ -57,7 +57,6 @@ class LoginViewController: UIViewController {
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
             self.present(alert,animated: true)
         }
-    
     }
     @IBAction func SignupButtonPressed(_ sender: UIButton)
     {

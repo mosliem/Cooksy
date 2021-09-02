@@ -33,6 +33,7 @@ class SearchViewController: UIViewController,getResultDelegate
         SearchTableView.dataSource = self
         recipeSearchBar.delegate = self
         searchManger.delegate = self
+        SearchTableView.backgroundColor = .systemGroupedBackground
         updateUI()
        
     }

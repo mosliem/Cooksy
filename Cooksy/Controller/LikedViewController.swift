@@ -18,11 +18,11 @@ class LikedViewController: UIViewController {
     let db = Firestore.firestore()
     let storage = Storage.storage().reference()
     var chosenId : Int?
-    
     override func viewWillAppear(_ animated: Bool)
     {
         super.viewWillAppear(animated)
         navigationController?.navigationBar.isHidden = false
+        updateUI()
     }
     override func viewDidLoad()
     {
@@ -36,28 +36,19 @@ class LikedViewController: UIViewController {
     
     func loadingScreen()
      {
-         
-         print("loading")
-         let loadingIcon = UIActivityIndicatorView(frame: CGRect(x: -25, y: -25, width: 150, height: 150))
+         let loadingIcon = UIActivityIndicatorView(frame: CGRect(x: -25, y: -10, width: 150, height: 150))
          loadingIcon.hidesWhenStopped = true
          loadingIcon.startAnimating()
+         loadingIcon.style = .medium
          loadingView.addSubview(loadingIcon)
          self.view.addSubview(loadingView)
-         updateData { (updated) in
-            if updated
-            {
-                DispatchQueue.main.async {
-                    print(updated)
-                    self.loadingView.removeFromSuperview()
-                    self.tableView.reloadData()
-                }
-            }
-        }
-     }
+         updateData()
     
-    func updateData(updateComplettion : @escaping(Bool)->Void)
+    }
+     
+    
+    func updateData()
     {
-        print("updateCalled")
         db.collection(username!).addSnapshotListener { (querySnapShot, error) in
             
             if let e = error
@@ -71,6 +62,7 @@ class LikedViewController: UIViewController {
                 var index = 1
                 for doc in snapShotdoc
                 {
+               
                     let data = doc.data()
                     if let imageURL = data["imageURL"] as? String
                     {
@@ -84,7 +76,10 @@ class LikedViewController: UIViewController {
                             index += 1
                             if index == snapShotdoc.count
                             {
-                                updateComplettion(true)
+                                DispatchQueue.main.async {
+                                self.loadingView.removeFromSuperview()
+                                }
+                                self.updateUI()
                             }
                         }
                     }
@@ -93,7 +88,12 @@ class LikedViewController: UIViewController {
             }
         }
     }
-    
+    func updateUI()
+    {
+        DispatchQueue.main.async{
+           self.tableView.reloadData()
+        }
+    }
     func downloadRecImage(url : String , downloadCompletion : @escaping (UIImage) -> Void) {
      
         let url = URL(string: url)
@@ -147,8 +147,8 @@ extension LikedViewController : getCellId
             let vc = segue.destination as! RecipePageViewController
             vc.id = chosenId
         }
+        
     }
 
 }
-
 

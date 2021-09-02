@@ -9,7 +9,6 @@
 import UIKit
 import Firebase
 
-
 class RecipePageViewController: UIViewController , getRecipeDataDelegate
 {
     let db = Firestore.firestore()
@@ -22,8 +21,8 @@ class RecipePageViewController: UIViewController , getRecipeDataDelegate
     var loved : Bool = false
     let username = Auth.auth().currentUser?.displayName
     
-    
     @IBOutlet weak var RecipescrollView: UIScrollView!
+    
     override func viewWillAppear(_ animated: Bool)
     {
         super.viewWillAppear(animated)
@@ -252,12 +251,6 @@ class RecipePageViewController: UIViewController , getRecipeDataDelegate
         else
         {
             lovedButton.setImage(Asset.loveIcon.image, for: .normal)
-            db.collection(username!).document("\(id!)").addSnapshotListener { (Snapshot, _) in
-                if let doc = Snapshot, doc.exists
-                {
-                 
-                }
-            }
             db.collection(username!).document("\(id!)").delete { (error) in
                 if let e = error
                 {
@@ -306,20 +299,31 @@ class RecipePageViewController: UIViewController , getRecipeDataDelegate
     {
         let imageData = image.pngData()
         let ref = storage.child("recipesData/\(id)")
-        ref.putData(imageData!, metadata: nil){(_ ,error) in
-            
-            if let e = error
+        
+        ref.getMetadata { (meta, _) in
+            if meta == nil
             {
-                print(e.localizedDescription)
-            }
-            else
-            {
-                ref.downloadURL { (url, _) in
-                    UploadCompleten(url!.absoluteString)
+                ref.putData(imageData!, metadata: nil){(_ ,error) in
+                    print("not exist")
+                    if let e = error
+                    {
+                        print(e.localizedDescription)
+                    }
+                    ref.downloadURL { (url, _) in
+                        UploadCompleten(url!.absoluteString)
+                    }
+                    
                 }
             }
-            
         }
+        ref.downloadURL { (url, _) in
+            if let urlString = url
+            {
+                print(urlString)
+                UploadCompleten(urlString.absoluteString)
+            }
+        }
+        
     }
     
 }

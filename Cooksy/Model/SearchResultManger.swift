@@ -14,7 +14,7 @@ protocol getResultDelegate
 
 class SearchResultManger
 {
-    let apiUrl = "https://api.spoonacular.com/recipes/complexSearch?apiKey=74e6cf12b1fe4739950f3cb8765a9871"
+    let apiUrl = "https://api.spoonacular.com/recipes/complexSearch?apiKey=b381d201a34a40ebb0b65b544978fc14"
     var results : [SearchItem] = []
     var delegate : getResultDelegate?
     

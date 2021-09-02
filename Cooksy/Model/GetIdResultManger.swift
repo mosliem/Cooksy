@@ -21,7 +21,7 @@ class GetIdResultManger
     var getDataDelegate : getRecipeDataDelegate?
     func fetchIdData(id : Int)
     {
-    let urlString = "https://api.spoonacular.com/recipes/\(id)/information?apiKey=74e6cf12b1fe4739950f3cb8765a9871&&includeNutrition=false"
+    let urlString = "https://api.spoonacular.com/recipes/\(id)/information?apiKey=b381d201a34a40ebb0b65b544978fc14&&includeNutrition=false"
     performRequest(urlString: urlString)
     }
     
@@ -53,6 +53,8 @@ class GetIdResultManger
         {
             var instruction : [String]? = []
             var ingredients : [String]? = []
+            
+            
             let decodedData = try decoder.decode(idResultData.self, from: data)
             for item in decodedData.extendedIngredients
             {

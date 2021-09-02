@@ -10,6 +10,9 @@
 		068C6A66D11D3C700052D0F5 /* Pods_Cooksy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 297CC0FC5648C35BE899349D /* Pods_Cooksy.framework */; };
 		551F387F26C99AA000E0D2FD /* SearchResultManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F387E26C99AA000E0D2FD /* SearchResultManger.swift */; };
 		551F388126C99AE100E0D2FD /* searchResultData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F388026C99AE100E0D2FD /* searchResultData.swift */; };
+		5534C19026DE4F4D0094DD3F /* randomRecipesManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5534C18F26DE4F4D0094DD3F /* randomRecipesManger.swift */; };
+		5534C19226DE52880094DD3F /* randomRecipesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5534C19126DE52880094DD3F /* randomRecipesData.swift */; };
+		5534C19426DE5CC90094DD3F /* randomRecipeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5534C19326DE5CC90094DD3F /* randomRecipeModel.swift */; };
 		554B1A4F26D909D900A2AEE5 /* LemonMilkBold-gx2B3.otf in Resources */ = {isa = PBXBuildFile; fileRef = 554B1A4D26D909D800A2AEE5 /* LemonMilkBold-gx2B3.otf */; };
 		554B1A5026D909D900A2AEE5 /* LemonMilkLight-owxMq.otf in Resources */ = {isa = PBXBuildFile; fileRef = 554B1A4E26D909D900A2AEE5 /* LemonMilkLight-owxMq.otf */; };
 		554B1A5226D90FB700A2AEE5 /* TempsNouveau-9Kj7.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 554B1A5126D90FB700A2AEE5 /* TempsNouveau-9Kj7.ttf */; };
@@ -67,6 +70,9 @@
 		297CC0FC5648C35BE899349D /* Pods_Cooksy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cooksy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		551F387E26C99AA000E0D2FD /* SearchResultManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultManger.swift; sourceTree = "<group>"; };
 		551F388026C99AE100E0D2FD /* searchResultData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchResultData.swift; sourceTree = "<group>"; };
+		5534C18F26DE4F4D0094DD3F /* randomRecipesManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = randomRecipesManger.swift; sourceTree = "<group>"; };
+		5534C19126DE52880094DD3F /* randomRecipesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = randomRecipesData.swift; sourceTree = "<group>"; };
+		5534C19326DE5CC90094DD3F /* randomRecipeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = randomRecipeModel.swift; sourceTree = "<group>"; };
 		554B1A4D26D909D800A2AEE5 /* LemonMilkBold-gx2B3.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LemonMilkBold-gx2B3.otf"; sourceTree = "<group>"; };
 		554B1A4E26D909D900A2AEE5 /* LemonMilkLight-owxMq.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LemonMilkLight-owxMq.otf"; sourceTree = "<group>"; };
 		554B1A5126D90FB700A2AEE5 /* TempsNouveau-9Kj7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TempsNouveau-9Kj7.ttf"; sourceTree = "<group>"; };
@@ -269,6 +275,9 @@
 				55E63A1B26D1D74200D89132 /* IdResultModel.swift */,
 				55E63A1D26D1FA3300D89132 /* idResultData.swift */,
 				55B6364826DAD2B80012F2D1 /* lovedRecipeDataModel.swift */,
+				5534C18F26DE4F4D0094DD3F /* randomRecipesManger.swift */,
+				5534C19126DE52880094DD3F /* randomRecipesData.swift */,
+				5534C19326DE5CC90094DD3F /* randomRecipeModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -491,6 +500,8 @@
 				55E63A1C26D1D74200D89132 /* IdResultModel.swift in Sources */,
 				55B6364326DAC1B20012F2D1 /* LikedViewController.swift in Sources */,
 				55E63A1E26D1FA3300D89132 /* idResultData.swift in Sources */,
+				5534C19426DE5CC90094DD3F /* randomRecipeModel.swift in Sources */,
+				5534C19226DE52880094DD3F /* randomRecipesData.swift in Sources */,
 				551F388126C99AE100E0D2FD /* searchResultData.swift in Sources */,
 				5593922026BCA26600221D5C /* IntroViewController.swift in Sources */,
 				55D8409826C85C88008EF264 /* SearchViewController.swift in Sources */,
@@ -500,6 +511,7 @@
 				555DAE7A26BF0B600057E683 /* MainViewController.swift in Sources */,
 				5591DDF826D70E3D008D2921 /* FontsManger.swift in Sources */,
 				5583B9A426D35E2800243C2A /* RecipePageViewController.swift in Sources */,
+				5534C19026DE4F4D0094DD3F /* randomRecipesManger.swift in Sources */,
 				55D8409E26C8836B008EF264 /* searchItemModel.swift in Sources */,
 				55E63A1A26D1D6E600D89132 /* GetIdResultManger.swift in Sources */,
 				55D05A4A26C2F18F0098AFE8 /* ProfileViewController.swift in Sources */,
