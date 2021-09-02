@@ -4,10 +4,7 @@ Using Firebase cloud, actions and data are done/received instantly and changes a
 with a simple design and real-time response, it provides a great user experience.
 
 
-<img src="https://github.com/mosliem/Cooksy/blob/main/Screens/launchScreen.png" width="300" height="600" />     <img src="https://github.com/mosliem/Cooksy/blob/main/Screens/loginScreen.png" width="300" height="600" />       <img src="https://github.com/mosliem/Cooksy/blob/main/Screens/SignupScreen.png" width="300" height="600" />   
-
-
-<img src="https://github.com/mosliem/Cooksy/blob/main/Screens/mainScreen.png" width="300" height="600" />       <img src="https://github.com/mosliem/Cooksy/blob/main/Screens/favoriteScreen.png" width="300" height="600" />       <img src="https://github.com/mosliem/Cooksy/blob/main/Screens/recipeDetails.png" width="300" height="600" />       <img src="https://github.com/mosliem/Cooksy/blob/main/Screens/profileScreen.png" width="300" height="600" />
+<img src="https://github.com/mosliem/Cooksy/blob/main/Screens/launchScreen.png" width="300" height="600" />     <img src="https://github.com/mosliem/Cooksy/blob/main/Screens/loginScreen.png" width="300" height="600" />       <img src="https://github.com/mosliem/Cooksy/blob/main/Screens/SignupScreen.png" width="300" height="600" />    <img src="https://github.com/mosliem/Cooksy/blob/main/Screens/mainScreen.png" width="300" height="600" />       <img src="https://github.com/mosliem/Cooksy/blob/main/Screens/favoriteScreen.png" width="300" height="600" />       <img src="https://github.com/mosliem/Cooksy/blob/main/Screens/recipeDetails.png" width="300" height="600" />       <img src="https://github.com/mosliem/Cooksy/blob/main/Screens/profileScreen.png" width="300" height="600" />
 
 
 
