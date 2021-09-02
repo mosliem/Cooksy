@@ -12,11 +12,12 @@ with a simple design and real-time response, it provides a great user experience
 
 
 
-Requirements
-Xcode version 11.2.1+
-Swift 5
-iPhone 8 or higher
-iOS 13.0+
+### Requirements
+- Xcode version 11.2.1+
+- Swift 5
+- iPhone 8 or higher
+- iOS 13.0+
+
 
 
 ### Functionality
